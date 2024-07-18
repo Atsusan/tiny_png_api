@@ -22,22 +22,17 @@ Tiny PngのAPIキーと紐付けして、Pythonで画像を圧縮するプログ
 
     2) YOUR_API_KEY を取得したAPIキーに置き換えます。
 
-3. 必要なライブラリのインストール
-    1) ターミナルを開き、以下のコマンドを実行して pip をインストールします。
+3. pipファイルを実行、pipファイルのpathを通す作業
 
-    コマンド１
-        curl https://bootstrap.pypa.io/get-pip.py
+    追記（get-pip.pyを予め用意したので下記コマンドの実行から続けて大丈夫です。）
 
-    コマンド２
-        -o get-pip.py
-
-    コマンド３
+    1) 下記のコマンドを入力
         python3 get-pip.py
 
-    3) pip がインストールされたディレクトリをパスに追加します。
+    2) pip がインストールされたディレクトリをパスに追加します。
      export PATH=$PATH:/Users/your_username/Library/Python/3.9/bin
 
-    4) tinify ライブラリをインストールします。
+    3) tinify ライブラリをインストールします。
     pip install tinify
 
 4 スクリプトの実行
