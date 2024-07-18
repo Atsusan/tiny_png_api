@@ -43,3 +43,29 @@ Tiny PngのAPIキーと紐付けして、Pythonで画像を圧縮するプログ
 
     python3 compress_images.py
 これで、original フォルダ内の画像が圧縮され、images フォルダに保存されます。
+
+
+↑↑ 上記、わかりにくいところもあると思うので、下記ChatGPTに聞いてみた回答です。
+
+Pythonのインストール:
+まず、Pythonがインストールされていることを確認してください。インストールされていない場合は、Python公式サイトからダウンロードしてインストールしてください。
+pipのインストール:
+get-pip.pyファイルを使ってpipをインストールします。コマンドプロンプトやターミナルで以下のコマンドを実行してください：
+Copypython get-pip.py
+
+tinifyライブラリのインストール:
+pipを使って、tinifyライブラリをインストールします：
+Copypip install tinify
+
+TinyPNG APIキーの設定:
+compress_images.pyファイル内の以下の行を編集し、あなたのTinyPNG APIキーを設定してください：
+pythonCopytinify.key = "YOUR_API_KEY ここを変える"
+TinyPNGのウェブサイトでアカウントを作成し、APIキーを取得する必要があります。
+フォルダ構造の準備:
+スクリプトと同じディレクトリにoriginalフォルダを作成し、圧縮したい画像ファイルを配置してください。
+スクリプトの実行:
+準備が整ったら、以下のコマンドでスクリプトを実行します：
+Copypython compress_images.py
+
+
+スクリプトが正常に実行されると、originalフォルダ内の画像が圧縮され、imagesフォルダに保存されます。
